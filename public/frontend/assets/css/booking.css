@@ -1,0 +1,25 @@
+    .box{
+        padding: 20px;
+        display: none;
+        margin-top: 20px;
+        border: 1px solid #000;
+    }
+	
+    .first{ 
+	background: #ffdfb0; 
+	}
+    .second{ 
+	background: #ffdfb0; 
+	}
+	
+    .blue{ 
+	background: #ffdfb0; 
+	}
+	
+	.bg-grey1{
+		background: #ffdfb0; 
+	}
+	
+	.section-padding{
+		padding:15px;
+	}

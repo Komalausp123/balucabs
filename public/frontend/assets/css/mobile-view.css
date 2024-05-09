@@ -1,0 +1,145 @@
+@media (min-width: 100px) and (max-width: 991px) {
+
+/*** Banner css start ***/
+  .hero-single,
+          .hero-single-image {
+            /* height: 300px !important; */
+			/* width: max-content!important; */
+			
+          }
+
+
+
+
+/*** Banner css End ***/
+
+
+/*** Breadcum title css start ***/
+.site-breadcrumb .breadcrumb-title {
+    font-size: 25px;
+    color: var(--color-white);
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+/*** Breadcum title css End ***/
+
+
+	/***   Home page Date and time icons css start ***/
+.date-class {
+    position:relative;
+}    
+.date-class:before {
+    content: "\f274";  
+    font-family: FontAwesome;
+    left:345px;
+    position:absolute;
+     top:5;
+ }
+	
+	
+.time-class {
+    position:relative;
+}    
+.time-class:before {
+    content: "\f017";  
+    font-family: FontAwesome;
+    left:345px;
+    position:absolute;
+     top:5;
+ }	
+/*** Home page Date and time icons css End ***/		
+
+	
+	
+	/***   AIRPORT TAXI Date and time icons css start ***/
+.date-class2 {
+    position:relative;
+}    
+.date-class2:before {
+    content: "\f274";  
+    font-family: FontAwesome;
+    left:270px;
+    position:absolute;
+     top:5;
+ }
+	
+	
+.time-class2 {
+    position:relative;
+}    
+.time-class2:before {
+    content: "\f017";  
+    font-family: FontAwesome;
+   left:270px;
+    position:absolute;
+     top:5;
+ }	
+/*** AIRPORT TAXI Date and time icons css End ***/	
+	
+	
+	
+	/***   Contact us Date and time icons css start ***/
+.date-class3 {
+    position:relative;
+}    
+.date-class3:before {
+    content: "\f274";  
+    font-family: FontAwesome;
+    left:270px;
+    position:absolute;
+     top:5;
+ }
+	
+	
+.time-class3 {
+    position:relative;
+}    
+.time-class3:before {
+    content: "\f017";  
+    font-family: FontAwesome;
+   left:270px;
+    position:absolute;
+     top:5;
+ }	
+/*** Contact us Date and time icons css End ***/		
+	
+	/***   Local taxi  Date and  time icons css start ***/
+.date-class4 {
+    position:relative;
+}    
+.date-class4:before {
+    content: "\f274";  
+    font-family: FontAwesome;
+    left:270px;
+    position:absolute;
+     top:5;
+ }
+	
+	
+.time-class4 {
+    position:relative;
+}    
+.time-class4:before {
+    content: "\f017";  
+    font-family: FontAwesome;
+   left:270px;
+    position:absolute;
+     top:5;
+ }	
+/***  Local taxi time Date and time icons css End ***/	
+
+	/**** Popup date css start ***/
+.date-popup{
+    position:relative;
+}    
+.date-popup:before {
+    content: "Select Date";
+	font-size:12px;
+    font-family: FontAwesome;
+   left:20px;
+    position:absolute;
+     top:5;
+ }	
+		/**** Popup date css end ***/
+}

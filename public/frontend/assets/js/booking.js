@@ -1,0 +1,16 @@
+    $(document).ready(function(){
+        $('input[type="radio"]').click(function(){
+            if($(this).attr("value")=="first"){
+                $(".box").hide();
+                $(".first").show();
+            }
+            if($(this).attr("value")=="second"){
+                $(".box").hide();
+                $(".second").show();
+            }
+            if($(this).attr("value")=="blue"){
+                $(".box").hide();
+                $(".blue").show();
+            }
+        });
+    });

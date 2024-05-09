@@ -1,0 +1,37 @@
+.someData{
+			max-width:768px;
+			height:100px;
+			display:none;
+		    padding: 1%;
+			overflow-x:auto;
+		}
+		
+		#first{
+			background:#e3e6e6;
+		}
+		
+		#second{
+			background:#e3e6e6;
+		}
+		.activeTab{
+			display:block;
+		}
+		
+		.someData{
+			max-width:768px;
+			height:100px;
+			display:none;
+		    padding: 1%;
+			overflow-x:auto;
+		}
+		
+		#third{
+			background:#e3e6e6;
+		}
+		
+		#fourth{
+			background:#e3e6e6;
+		}
+		.activeTab{
+			display:block;
+		}
