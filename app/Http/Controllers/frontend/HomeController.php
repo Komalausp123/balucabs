@@ -8,13 +8,17 @@ use App\Models\About;
 use App\Models\TermsandCondition;
 use App\Models\PrivacyPolicy;
 use App\Models\Blog;
+use App\Models\Testimonial;
+
 
 class HomeController extends Controller
 {
     public function index()
     {
         $blogs = Blog::all();
-        return view('frontend.index',compact('blogs'));
+        $testimonials = Testimonial::all();
+
+        return view('frontend.index',compact('blogs','testimonials'));
     }
 
     public function about()

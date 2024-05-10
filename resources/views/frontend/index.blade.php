@@ -1888,108 +1888,29 @@
                 </div>
                 <div class="testimonial-slider owl-carousel owl-theme">
                     <!-- List Start -->
+                    @foreach($testimonials as $testimonial)
                     <div class="testimonial-single">
                         <div class="testimonial-content">
                             <div class="testimonial-author-img">
-                                <img src="{{ asset('frontend/assets/img/feedback/f1.jpg') }}" alt />
+                                <img src="{{ asset('storage/testimonial/'.@$testimonial->image) }}" alt />
                             </div>
                             <div class="testimonial-author-info">
-                                <h4>Nitish K</h4>
-                                <p>Bangalore</p>
+                                <h4>{{@$testimonial->name}}</h4>
+                                <p>{{@$testimonial->location}}</p>
                             </div>
                         </div>
                         <div class="testimonial-quote">
                             <span class="testimonial-quote-icon"><i class="flaticon-quote"></i></span>
                             <p>
-                                "Booking with Balu Cabs was a breeze! Their secure booking process
-                                gave me peace of mind."
+                                @php
+                                $truncated_content = strlen($testimonial->content) > 70 ? substr($testimonial->content, 0, 70) . '...' : $testimonial->content;
+                                 @endphp
+                                {!! @$truncated_content !!}
                             </p>
                         </div>
                     </div>
-                    <!-- List End -->
-
-                    <!-- List Start -->
-                    <div class="testimonial-single">
-                        <div class="testimonial-content">
-                            <div class="testimonial-author-img">
-                                <img src="{{ asset('frontend/assets/img/feedback/f2.jpg') }}" alt />
-                            </div>
-                            <div class="testimonial-author-info">
-                                <h4>Rahul T</h4>
-                                <p>Bangalore</p>
-                            </div>
-                        </div>
-                        <div class="testimonial-quote">
-                            <span class="testimonial-quote-icon"><i class="flaticon-quote"></i></span>
-                            <p>
-                                "I was impressed by the quality of cars Balu Cabs provided. Clean, modern,
-                                and well-maintained vehicles."
-                            </p>
-                        </div>
-                    </div>
-                    <!-- List End -->
-
-                    <!-- List Start -->
-                    <div class="testimonial-single">
-                        <div class="testimonial-content">
-                            <div class="testimonial-author-img">
-                                <img src="{{ asset('frontend/assets/img/feedback/f3.jpg') }}" alt />
-                            </div>
-                            <div class="testimonial-author-info">
-                                <h4>Vivek S</h4>
-                                <p>Bangalore</p>
-                            </div>
-                        </div>
-                        <div class="testimonial-quote">
-                            <span class="testimonial-quote-icon"><i class="flaticon-quote"></i></span>
-                            <p>
-                                "The expert drivers at Balu Cabs ensured a safe and efficient journey.
-                                Their professionalism."
-                            </p>
-                        </div>
-                    </div>
-                    <!-- List End -->
-
-                    <!-- List Start -->
-                    <div class="testimonial-single">
-                        <div class="testimonial-content">
-                            <div class="testimonial-author-img">
-                                <img src="{{ asset('frontend/assets/img/feedback/f4.jpg') }}" alt />
-                            </div>
-                            <div class="testimonial-author-info">
-                                <h4>Ramesh V</h4>
-                                <p>Bangalore</p>
-                            </div>
-                        </div>
-                        <div class="testimonial-quote">
-                            <span class="testimonial-quote-icon"><i class="flaticon-quote"></i></span>
-                            <p>
-                                "I found Balu Cabs' prices to be very reasonable. I got a high-quality
-                                service at a great price. Highly recommended!"
-                            </p>
-                        </div>
-                    </div>
-                    <!-- List End -->
-
-                    <!-- List Start -->
-                    <div class="testimonial-single">
-                        <div class="testimonial-content">
-                            <div class="testimonial-author-img">
-                                <img src="{{ asset('frontend/assets/img/feedback/f5.jpg') }}" alt />
-                            </div>
-                            <div class="testimonial-author-info">
-                                <h4>Ramesh V</h4>
-                                <p>Bangalore</p>
-                            </div>
-                        </div>
-                        <div class="testimonial-quote">
-                            <span class="testimonial-quote-icon"><i class="flaticon-quote"></i></span>
-                            <p>
-                                "Booking with Balu Cabs was a breeze! Their secure booking process
-                                gave me peace of mind."
-                            </p>
-                        </div>
-                    </div>
+                    @endforeach
+                 
                     <!-- List End -->
                 </div>
             </div>
