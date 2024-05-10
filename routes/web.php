@@ -23,6 +23,10 @@ Route::get('/Local-Taxi', [HomeController::class, 'local'])->name('local');
 Route::get('/Contact-us', [HomeController::class, 'contact'])->name('contact');
 Route::get('/Privacy-Policy', [HomeController::class, 'privacy'])->name('privacy');
 Route::get('/Terms-Condition', [HomeController::class, 'terms'])->name('terms');
+Route::get('/blog', [HomeController::class, 'blog'])->name('blog');
+Route::get('/blog-details/{slug}', [HomeController::class, 'blog_details'])->name('blog-details');
+
+
 
 // form submission
 Route::get('/Airport-Taxi-form', [HomeController::class, 'airport_form'])->name('airport_form');

@@ -11,10 +11,10 @@
 		<meta name="keywords" content=" "/>
 
 		<!-- Title -->
-		<title> Gravity CRM </title>
+		<title> BaluCabs </title>
 
 		<!--Favicon -->
-		<link rel="icon" href="{{asset('admin/assets/img/brand/favicon.png')}}" type="image/x-icon"/>
+		<link rel="icon" type="image/x-icon" href="{{ asset('frontend/assets/img/logo/logo1.png') }}" />
 
 		<!--Bootstrap.min css-->
 		<link rel="stylesheet" href="{{asset('admin/assets/plugins/bootstrap/css/bootstrap.min.css')}}">

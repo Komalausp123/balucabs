@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg main-navbar">
-    <a class="header-brand" href="{{ route('index') }}">
-        <img src="{{ asset('admin/assets/img/brand/logo.png') }}" class="header-brand-img main-logo" alt="logo">
+    <a class="header-brand" href="">
+        <img src="{{ asset('frontend/assets/img/logo/logo1.png') }}" class="header-brand-img main-logo" alt="logo">
     </a>
 
     <form class="form-inline mr-auto">

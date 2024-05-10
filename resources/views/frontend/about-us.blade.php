@@ -22,7 +22,7 @@
                     <div class="col-lg-6">
                         <div class="about-left wow fadeInLeft" data-wow-delay=".25s">
                             <div class="about-img">
-                                <img src="{{ asset('frontend/assets/s/img/about/ab1.jpg') }}" alt />
+                                <img src="{{ asset('storage/about/'.@$about->image) }}" alt style="width:100%" />
                             </div>
                             <div class="about-experience">
                                 <div class="about-experience-icon">
@@ -41,21 +41,11 @@
                                     About Us
                                 </span>
 
-                                <h2 class="site-title">Balu Cabs</h2>
+                                <h2 class="site-title">{{@$about->heading}}</h2>
                             </div>
 
                             <p class="about-text">
-                                At Balu Cabs, we are dedicated to providing reliable and comfortable airport
-                                taxi services. With a fleet of well-maintained vehicles and professional drivers,
-                                we ensure a safe and enjoyable journey for our customers.
-                                Our goal is to make your airport transfer experience hassle-free
-                                and convenient. <br>
-                                Whether you're traveling for business or leisure, our
-                                team is committed to providing prompt and efficient service, ensuring you
-                                reach your destination on time, every time.
-                                We strive to maintain the highest standards of customer satisfaction,
-                                offering competitive rates and personalized service to meet your specific
-                                travel needs. Book your airport taxi with Balu Cabs and experience the difference!
+                               {!! @$about->content !!}
                             </p>
 
                             <div class="about-list-wrapper">

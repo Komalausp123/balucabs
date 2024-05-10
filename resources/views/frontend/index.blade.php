@@ -2028,5 +2028,52 @@
         </div>
 
         <!-- CTA Section End -->
+        
+    <!-- our blogs -->
+
+    <div class="car-area bg py-120">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mx-auto">
+            <div class="site-heading text-center">
+              <h2 class="site-title"> Our Blog </h2>
+              <div class="heading-divider"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+        
+
+        @foreach($blogs as $blog)
+          <!-- List Start --->
+          <div class="col-md-6 col-lg-4 col-xl-4">
+            <div class="car-item wow fadeInUp" data-wow-delay=".25s">
+              <div class="car-img car-list-img">
+                <img src="{{asset('storage/blog/'.@$blog->image)}}" alt style="width:100%" />
+              </div>
+              <div class="car-content">
+                <div class="car-top">
+                  <h4><a href="#">{{@$blog->heading}}</a></h4>
+                  <p>
+
+                  {!! @$blog->content !!}
+
+                  </p>
+                  <a href="{{route('blog')}}" class="theme-btn2">
+                    Read More
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          @endforeach
+          <!-- List End  --->
+        </div>
+      </div>
+    </div>
+
+    <!-- our blogs -->
+
+
     </main>
 @endsection

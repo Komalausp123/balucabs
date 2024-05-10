@@ -27,6 +27,9 @@
                                 <a href="{{ route('about') }}"><i class="fas fa-caret-right"></i> About us </a>
                             </li>
                             <li>
+                                <a href="{{ route('blog') }}"><i class="fas fa-caret-right"></i> Blog </a>
+                            </li>
+                            <li>
                                 <a href="{{ route('contact') }}"><i class="fas fa-caret-right"></i> Contact us
                                 </a>
                             </li>

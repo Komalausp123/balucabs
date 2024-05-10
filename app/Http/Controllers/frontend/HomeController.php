@@ -4,17 +4,23 @@ namespace App\Http\Controllers\frontend;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\About;
+use App\Models\TermsandCondition;
+use App\Models\PrivacyPolicy;
+use App\Models\Blog;
 
 class HomeController extends Controller
 {
     public function index()
     {
-        return view('frontend.index');
+        $blogs = Blog::all();
+        return view('frontend.index',compact('blogs'));
     }
 
     public function about()
     {
-        return view('frontend.about-us');
+        $about = About::orderBy('id','desc')->first();
+        return view('frontend.about-us',compact('about'));
     }
 
     public function airport()
@@ -46,12 +52,14 @@ class HomeController extends Controller
 
     public function privacy()
     {
-        return view('frontend.privacy-policy');
+        $privacy = PrivacyPolicy::orderBy('id','desc')->first();
+        return view('frontend.privacy-policy',compact('privacy'));
     }
 
     public function terms()
     {
-        return view('frontend.terms-condition');
+        $terms = TermsandCondition::orderBy('id','desc')->first();
+        return view('frontend.terms-condition',compact('terms'));
     }
 
     public function airport_form()
@@ -73,5 +81,14 @@ class HomeController extends Controller
     public function outstation_form()
     {
         return view('frontend.outstation-form');
+    }
+    public function blog(){
+        $blogs = Blog::all();
+        return view('frontend.blog',compact('blogs'));
+    }
+    public function blog_details($slug){
+        $blog = Blog::where('slug',$slug)->first();
+        return view('frontend.blog-details',compact('blog'));
+
     }
 }
